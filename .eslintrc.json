@@ -2,5 +2,13 @@
   "plugins": ["cypress"],
   "env": {
     "cypress/globals": true
+  },
+  "parser": "@babel/eslint-parser",
+  "babel": {
+    "env": {
+      "test": {
+        "plugins": ["@babel/plugin-transform-modules-commonjs"]
+      }
+    }
   }
 }
