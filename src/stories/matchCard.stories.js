@@ -1,5 +1,3 @@
-import { within } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
 import React from "react";
 import { Provider } from "react-redux";
 import { BrowserRouter } from "react-router-dom";
@@ -28,11 +26,6 @@ const Template = (args) => (
 
 export const MatchCardComponent = Template.bind({});
 MatchCardComponent.args = {
-  onClick: async ({ args, canvasElement }) => {
-    const canvas = within(canvasElement);
-    await userEvent.click(canvas.getByRole("image"));
-    await expect(args.onClick).toHaveBeenCalled();
-  },
   gameTitle: "Dune",
   image:
     "https://cf.geekdo-images.com/PhjygpWSo-0labGrPBMyyg__imagepage/img/BjM3LyahJ4IQ2ov5MkzkHatbmUc=/fit-in/900x600/filters:no_upscale():strip_icc()/pic5666597.jpg",
