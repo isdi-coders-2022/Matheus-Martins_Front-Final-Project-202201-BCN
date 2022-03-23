@@ -16,8 +16,16 @@
     "noEmit": true,
     "noEmitOnError": true,
     "noImplicitAny": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "types": ["jest", "node", "@types/testing-library__jest-dom"]
   },
-  "include": ["src/**/*", "/*.ts", "/*.tsx", "jest.config.js"],
-  "exclude": ["node_modules", "**/*.spec.ts"]
+  "include": [
+    "src/**/*",
+    "/*.ts",
+    "/*.tsx",
+    "jest.config.js",
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": ["node_modules", "**/*.spec.ts", "cypress"]
 }
