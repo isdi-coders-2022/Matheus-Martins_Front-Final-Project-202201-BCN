@@ -6,7 +6,7 @@ This project was developed by [Matheus Martins](https://github.com/matheusvmm13)
 
 ## Tech Stack
 
-`Frontend:` React | Typescript | Redux | Styled-components | Jest
+`Frontend:` React | Typescript | Redux | Styled-components | Jest | Cypress
 `Backend:` NodeJS | ExpressJS | MongoDB | Mongoose | JWT | Jest
 
 ## Installation
